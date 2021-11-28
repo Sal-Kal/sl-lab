@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Key Event</title>
+</head>
+
+<body>
+
+    <form>
+        Write a message:<br>
+        <input type="text" onKeyDown="color('yellow')" onKeyUp="color('blue')" id="myInput">
+    </form>
+
+    <script>
+        function color(color) {
+            document.forms[0].myInput.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
